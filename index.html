@@ -26,15 +26,37 @@
 
         <main>
             <h1>Control your time</h1>
-            <div id="all">
-                <h3>All reminder's</h3>
-            </div>
-            <div id="cubo">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <!-- aqui van las tareas que aparecen al buscarlas en el search -->
+
+            <div class="container-cube">
+                <div id="cube">
+                    <div id="all">
+                        <h3>All reminder's</h3>
+                    </div>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <!-- aqui van las tareas que aparecen al buscarlas en el search -->
+                </div>
+
+                <div id="cube-add">
+                    <div id="add">
+                        <h3>Add reminde's</h3>
+                    </div>
+                    <section id="add-reminde">
+                        <input id="title-add" type="text" placeholder="Add reminde">
+                        <button type="submit">Add</button>
+                    </section>
+                    <section>
+                        <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+                    </section>
+                    <!-- aqui van los adds del recordatorio con la eleccion entre 3 posibles: 
+                Important
+                Daily
+                Weekly
+                Monthly
+                 -->
+                </div>
             </div>
             <div class="faq">
                 <h2>How to improve planning</h2>
