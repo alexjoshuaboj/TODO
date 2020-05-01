@@ -43,12 +43,27 @@
                     <div id="add">
                         <h3>Add reminde's</h3>
                     </div>
+                    <select aria-placeholder="choose" name="choose-option" id="select-section">
+                        <option value="">Choose reminde</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
                     <section id="add-reminde">
-                        <input id="title-add" type="text" placeholder="Add reminde">
+                        <input id="title-add" type="text" placeholder="Add reminde title">
                         <button type="submit">Add</button>
                     </section>
-                    <section>
-                        <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
+                    <section id="seccion-info">
+                        <textarea id="texto-area" name="comentarios" rows="10"
+                            cols="55">Write here your reminde</textarea>
+                        <div id="options">
+                            <h4>Info reminde's</h4>
+                            <p id="yellow">Lorem, ipsum dolor.</p>
+                            <p id="militar-green">Lorem ipsum dolor sit.</p>
+                            <p id="beige">Lorem, ipsum dolor.</p>
+                            <p id="black">Lorem, ipsum dolor.</p>
+                        </div>
                     </section>
                     <!-- aqui van los adds del recordatorio con la eleccion entre 3 posibles: 
                 Important

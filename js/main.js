@@ -19,3 +19,7 @@ faq.on('click', function () {
         contenido.slideUp(400);
     }
 })
+
+var textoArea = $('#texto-area');
+
+console.log(textoArea.text());
