@@ -26,17 +26,56 @@
 
         <main>
             <h1>Control your time</h1>
-
             <div class="container-cube">
                 <div id="cube">
                     <div id="all">
                         <h3>All reminder's</h3>
                     </div>
-                    <form class="form-inline">
+                    <seccion class="form-inline">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                    <!-- aqui van las tareas que aparecen al buscarlas en el search -->
+                    </seccion>
+                    <!-- zona para imprimir los remindes's -->
+                    <section class="all-tasks">
+                        <div id="task">
+                            <!-- aqui van las tareas que aparecen al buscarlas en el search -->
+                            <h3>Title reminde</h3>
+                            <p>Text reminde Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum
+                                excepturi voluptate labore eos quidem possimus, hic quae omnis placeat distinctio vel
+                                pariatur, corporis praesentium voluptatum dolorum cum sunt quia?</p>
+                            <div id="importance" data-color="#"></div>
+                            <button id="btn-remove" data-button="1">Delete</button>
+                        </div>
+                        <div id="task">
+                            <!-- aqui van las tareas que aparecen al buscarlas en el search -->
+                            <h3>Title reminde</h3>
+                            <p>Text reminde Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum
+                                excepturi voluptate labore eos quidem possimus, hic quae omnis placeat distinctio vel
+                                pariatur, corporis praesentium voluptatum dolorum cum sunt quia?</p>
+                            <div id="importance" data-color="#"></div>
+                            <button id="btn-remove" data-button="1">Delete</button>
+                        </div>
+                        <div id="task">
+                            <!-- aqui van las tareas que aparecen al buscarlas en el search -->
+                            <h3>Title reminde</h3>
+                            <p>Text reminde Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum
+                                excepturi voluptate labore eos quidem possimus, hic quae omnis placeat distinctio vel
+                                pariatur, corporis praesentium voluptatum dolorum cum sunt quia?</p>
+                            <div id="importance" data-color="#"></div>
+                            <button id="btn-remove" data-button="1">Delete</button>
+                        </div>
+                        <div id="task">
+                            <!-- aqui van las tareas que aparecen al buscarlas en el search -->
+                            <h3>Title reminde</h3>
+                            <p>Text reminde Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum
+                                excepturi voluptate labore eos quidem possimus, hic quae omnis placeat distinctio vel
+                                pariatur, corporis praesentium voluptatum dolorum cum sunt quia?</p>
+                            <div id="importance" data-color="#"></div>
+                            <button id="btn-remove" data-button="1">Delete</button>
+                        </div>
+                    </section>
+
+
                 </div>
 
                 <div id="cube-add">
@@ -45,10 +84,10 @@
                     </div>
                     <select aria-placeholder="choose" name="choose-option" id="select-section">
                         <option value="">Choose reminde</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="">Important</option>
+                        <option value="">Daily</option>
+                        <option value="">Weekly</option>
+                        <option value="">Monthly</option>
                     </select>
                     <section id="add-reminde">
                         <input id="title-add" type="text" placeholder="Add reminde title">
@@ -57,12 +96,12 @@
                     <section id="seccion-info">
                         <textarea id="texto-area" name="comentarios" rows="10"
                             cols="55">Write here your reminde</textarea>
-                        <div id="options">
+                        <div class="options">
                             <h4>Info reminde's</h4>
-                            <p id="yellow">Lorem, ipsum dolor.</p>
-                            <p id="militar-green">Lorem ipsum dolor sit.</p>
-                            <p id="beige">Lorem, ipsum dolor.</p>
-                            <p id="black">Lorem, ipsum dolor.</p>
+                            <p id="yellow">Important</p>
+                            <p id="militar-green">Daily</p>
+                            <p id="beige">Weekly</p>
+                            <p id="black">Monthly</p>
                         </div>
                     </section>
                     <!-- aqui van los adds del recordatorio con la eleccion entre 3 posibles: 
@@ -117,7 +156,7 @@
         <footer>
 
             <div>
-                <img src="https://media.giphy.com/media/GD0fpY88oJQWc/giphy.gif" id="my-phoDOS">
+                <img src="https://media.giphy.com/media/aAXtF4kGYeZFe/giphy.gif" id="my-phoDOS">
             </div>
             <p>Copyright 2020</p>
 

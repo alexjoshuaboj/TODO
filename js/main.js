@@ -23,3 +23,29 @@ faq.on('click', function () {
 var textoArea = $('#texto-area');
 
 console.log(textoArea.text());
+
+
+// declaracion del ARRAY guarda los datos
+
+const JSON_ReD = new Array(
+    {
+        cat_ReD: 'Important',
+        tit_ReD: 'Estudiar',
+        txt_ReD: 'Estudiar los diferentes tipos de bucles de JAVASCRIPT',
+        data_Imp: 1,
+    },
+    {
+        cat_ReD: 'Daily',
+        tit_ReD: 'Comer',
+        txt_ReD: 'Preparar la comida para todo el dia',
+        data_Imp: 2,
+    },
+    {
+        cat_ReD: 'Weekly',
+        tit_ReD: 'Limpiar',
+        txt_ReD: 'Tienes que limpiar puto cerdo',
+        data_Imp: 3,
+    },
+)
+
+//3 categorias obligatorias 
