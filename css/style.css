@@ -18,7 +18,7 @@ body{
 }
 
 
-.navbar{
+.navbar-nav{
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -31,12 +31,10 @@ body{
     background-color:white;
 }
 
-.navbar-brand{
+.navbar{
     display: inline-block;
-/*     padding-top: 4px;
-    padding-bottom: 4px; */
     margin-right: auto;
-    font-size: 14px;;
+    font-size: 14px;
     line-height: inherit;
     white-space: normal;
     font-weight: bold;
@@ -48,31 +46,18 @@ body{
     flex-flow: row wrap;
     align-items: center;
     top: 0;
-    right: 0;
+    right: 400px;
     position: absolute;
     padding-top: 4px;
 }
 
-.form-inline .form-control{
+.form-inline #search{
     display: inline-block;
     width: auto;
     display: block;
     border:none;
     border-bottom: 1px solid black;
-}
-
-.mr-sm-2{
-    margin-right: 10px;
-}
-
-.btn{
-    margin-right: 10px;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 20px;
 }
 
 footer div{
@@ -90,6 +75,7 @@ main{
 }
 
 main h1{
+    margin: 10px 0;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: lighter;
@@ -133,7 +119,7 @@ footer p{
     display: none;
 }
 
-#all h3,#add h3{
+#all h3{
     padding-left: 5px;
     font-weight: lighter;
 }
@@ -147,7 +133,7 @@ footer p{
     position: relative;
     border: 1px solid black;
     height: 250px;
-    width: 48%;
+    width: 100%;
     margin: 0px 3%;
 }
 
@@ -196,12 +182,32 @@ footer p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#select-sectionAll{
+    position: absolute;
+    top: 0;
+    right: 220px;
+    margin-top: 4px;
+    margin-right: 25px;
+    border: none;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 #texto-area{
     resize: none;
     margin-left: 30px;
     margin-top: 20px;
     width: 65%;
+}
+
+#searchBtnAll{
+    margin-right: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .options{
@@ -219,30 +225,31 @@ footer p{
 }
 #yellow{
     background-color: rgba(255, 232, 31, 0.4);
+    width: 20px;
+    height: 100%;
 }
 
 #militar-green{
-    background-color: rgba(134, 137, 93, 0.4)
+    background-color: rgba(134, 137, 93, 0.4);
+    width: 20px;
+    height: 100%;
 }
 
 #beige{
-    background-color: rgba(225, 198, 153, 0.4)
+    background-color: rgba(225, 198, 153, 0.4);
+    width: 20px;
+    height: 100%;
 }
 
-#black{
-    background-color: rgba(0, 0, 0, 0.4)
-}
 
-
-
-.all-tasks{
+.alltasks{
     /* display: inline-block; */
     height: 200px;
     overflow-y: scroll;
 
 }
 
-.all-tasks #task{
+.alltasks .task{
     display: flex;
     position: relative;
     width: auto;
@@ -251,7 +258,7 @@ footer p{
     margin-top: 10px;
 }
 
-.all-tasks #importance{
+.alltasks #importance{
     position: absolute;
     top: 0;
     right: 0;
@@ -264,7 +271,7 @@ footer p{
     width: 15px;
 }
 
-.all-tasks #btn-remove{
+.alltasks #btn-remove{
     position: absolute;
     top: 30%;
     right: 0;
@@ -277,7 +284,7 @@ footer p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.all-tasks h3{
+.alltasks h3{
     position: absolute;
     margin-left: 5px;
     top: 0;
@@ -287,7 +294,7 @@ footer p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.all-tasks p{
+.alltasks p{
     position: absolute;
     top: 20px;
     left: 0;

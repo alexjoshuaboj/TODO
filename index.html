@@ -7,109 +7,54 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Recordatorios_</title>
+    <title>Reminde_</title>
 </head>
 
 <body>
-
-
     <div class="wrapper">
         <header>
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar-nav">
                 <div>
                     <img src="https://media.giphy.com/media/l44Qohad7fiYnfXDG/giphy.gif" width="60" id="my-pho">
                 </div>
-                <a class="navbar-brand">Reminder</a>
-
+                <a class="navbar">Reminder</a>
+                <div>
+                    <p id="msn-try"></p>
+                </div>
             </nav>
         </header>
-
         <main>
             <h1>Control your time</h1>
             <div class="container-cube">
                 <div id="cube">
+                    <seccion class="form-inline">
+                        <select id="select-sectionAll" aria-placeholder="choose" name="choose-option">
+                            <option value="">Choose importance</option>
+                            <option value="yellow">Important</option>
+                            <option value="militar-green">Daily</option>
+                            <option value="beige">Monthly</option>
+                        </select>
+                        <input id="search" type="text" placeholder="Search" aria-label="Search">
+                        <button id="searchBtnAll" type="submit">Search</button>
+                    </seccion>
                     <div id="all">
                         <h3>All reminder's</h3>
                     </div>
-                    <seccion class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </seccion>
-                    <!-- zona para imprimir los remindes's -->
-                    <section class="all-tasks">
-                        <div id="task">
-                            <!-- aqui van las tareas que aparecen al buscarlas en el search -->
-                            <h3>Title reminde</h3>
-                            <p>Text reminde Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum
-                                excepturi voluptate labore eos quidem possimus, hic quae omnis placeat distinctio vel
-                                pariatur, corporis praesentium voluptatum dolorum cum sunt quia?</p>
-                            <div id="importance" data-color="#"></div>
-                            <button id="btn-remove" data-button="1">Delete</button>
-                        </div>
-                        <div id="task">
-                            <!-- aqui van las tareas que aparecen al buscarlas en el search -->
-                            <h3>Title reminde</h3>
-                            <p>Text reminde Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum
-                                excepturi voluptate labore eos quidem possimus, hic quae omnis placeat distinctio vel
-                                pariatur, corporis praesentium voluptatum dolorum cum sunt quia?</p>
-                            <div id="importance" data-color="#"></div>
-                            <button id="btn-remove" data-button="1">Delete</button>
-                        </div>
-                        <div id="task">
-                            <!-- aqui van las tareas que aparecen al buscarlas en el search -->
-                            <h3>Title reminde</h3>
-                            <p>Text reminde Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum
-                                excepturi voluptate labore eos quidem possimus, hic quae omnis placeat distinctio vel
-                                pariatur, corporis praesentium voluptatum dolorum cum sunt quia?</p>
-                            <div id="importance" data-color="#"></div>
-                            <button id="btn-remove" data-button="1">Delete</button>
-                        </div>
-                        <div id="task">
-                            <!-- aqui van las tareas que aparecen al buscarlas en el search -->
-                            <h3>Title reminde</h3>
-                            <p>Text reminde Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laborum
-                                excepturi voluptate labore eos quidem possimus, hic quae omnis placeat distinctio vel
-                                pariatur, corporis praesentium voluptatum dolorum cum sunt quia?</p>
-                            <div id="importance" data-color="#"></div>
-                            <button id="btn-remove" data-button="1">Delete</button>
-                        </div>
+                    <section>
+                        <select aria-placeholder="choose" name="choose-option" id="select-section">
+                            <option value="">Choose importance</option>
+                            <option value="yellow">Important</option>
+                            <option value="militar-green">Daily</option>
+                            <option value="beige">Monthly</option>
+                        </select>
+                        <section id="add-reminde">
+                            <input id="title-add" type="text" placeholder="Add reminde">
+                            <button id="btnAdd" type="submit">Add</button>
+                        </section>
                     </section>
+                    <div class="alltasks">
 
-
-                </div>
-
-                <div id="cube-add">
-                    <div id="add">
-                        <h3>Add reminde's</h3>
                     </div>
-                    <select aria-placeholder="choose" name="choose-option" id="select-section">
-                        <option value="">Choose reminde</option>
-                        <option value="">Important</option>
-                        <option value="">Daily</option>
-                        <option value="">Weekly</option>
-                        <option value="">Monthly</option>
-                    </select>
-                    <section id="add-reminde">
-                        <input id="title-add" type="text" placeholder="Add reminde title">
-                        <button type="submit">Add</button>
-                    </section>
-                    <section id="seccion-info">
-                        <textarea id="texto-area" name="comentarios" rows="10"
-                            cols="55">Write here your reminde</textarea>
-                        <div class="options">
-                            <h4>Info reminde's</h4>
-                            <p id="yellow">Important</p>
-                            <p id="militar-green">Daily</p>
-                            <p id="beige">Weekly</p>
-                            <p id="black">Monthly</p>
-                        </div>
-                    </section>
-                    <!-- aqui van los adds del recordatorio con la eleccion entre 3 posibles: 
-                Important
-                Daily
-                Weekly
-                Monthly
-                 -->
                 </div>
             </div>
             <div class="faq">
@@ -148,41 +93,14 @@
                     id
                     reiciendis accusamus.</p>
             </div>
-
-
-
         </main>
-
         <footer>
-
             <div>
                 <img src="https://media.giphy.com/media/aAXtF4kGYeZFe/giphy.gif" id="my-phoDOS">
             </div>
-            <p>Copyright 2020</p>
-
-
+            <p>Copyright TODO'S</p>
         </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
